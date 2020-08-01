@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <div id="bulle">
+    <form id="survey-form" action="">
+        <div class="vertical">
+        <label id="name-label" for="name">*Name</label>
+        <input  id="name" type="text" name="name" placeholder="Enter your name" required>
+    </div>   
+    <div class="vertical">
+        <label id="email-label" for="e-mail">*E-mail</label>
+        <input id="email" type="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="vertical">
+        <label id="number-label" for="number">*Age</label>
+        <input id="number" min="0" max="99" type="number" name="number" placeholder="Enter your age" required>       
+    </div>
+    <div class="vertical">
+        <label >*Which option best describes your current role?</label>
+        <select name="choice" id="dropdown">
+
+                <option value="student">Student</option>
+    
+                <option value="job">Full time job</option>
+    
+                <option value="Hobby">Hobby</option>
+    
+                </select>
+
+            </div>
+
+            <div class="vertical">
+
+        <label style="text-align:center" >*How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <label>Definitely<input value="1" name="radio-buttons" type="radio"></label>
+        <label>Maybe<input  value="2" name="radio-buttons" type="radio"></label>
+        <label>Not sure<input value="3" name="radio-buttons" type="radio"></label>
+    </div>
+    <div class="vertical">
+        <label style="text-align:center" for="">*Things that should be improved in the future(Check all that apply):</label>
+        <label for="userRatings"><input name="prefer" value="1" type="checkbox" class="userRatings" ></input>Front-end projects</label>
+        <label for="userRatings"><input name="prefer" value="2" type="checkbox" class="userRatings" ></input>Back-end projects</label>
+        <label for="userRatings"><input name="prefer" value="3" type="checkbox" class="userRatings" ></input>Web-design projects</label>
+        <label for="userRatings"><input name="prefer" value="4" type="checkbox" class="userRatings" ></input>Wiki</label>
+        <label for="userRatings"><input name="prefer" value="5" type="checkbox" class="userRatings" ></input>Forum</label>
+        <label for="userRatings"><input name="prefer" value="6" type="checkbox" class="userRatings" ></input>Open Source Community</label>
+    </div>
+    <div class="vertical">
+        <label class="vertical" for="comment">*Any Comments or Suggestions?<textarea rows="4" cols="30" id="comment"></textarea></label>
+    </div>
+    <div id="button">
+        <button id="submit">submit</button>
+    </div>
+    </form>
+
+</div> 
+</body>
+</html>
